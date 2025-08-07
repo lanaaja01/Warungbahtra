@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Nikmat Rasa - Nikmati Kelezatan Kami</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="[https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap](https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap)" rel="stylesheet">
+    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css)">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="path/to/your/logo.png" alt="Warung Nikmat Rasa Logo">
+                <h1>Warung Nikmat Rasa</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li class="dropdown">
+                        <a href="#products" class="dropbtn">Produk Kami <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#ice">Es</a>
+                            <a href="#bakso">Bakso</a>
+                            <a href="#soto">Soto</a>
+                            <a href="#kwetiau">Kwetiau</a>
+                        </div>
+                    </li>
+                    <li><a href="#gallery">Galeri</a></li>
+                    <li><a href="#contact">Kontak & Pesan</a></li>
+                </ul>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+        <div class="header-overlay"></div>
+        <div class="header-text-content">
+            <h2>Rasakan Sensasi Rasa yang Menggugah Selera!</h2>
+            <p>Warung Nikmat Rasa menyajikan hidangan autentik dengan cinta.</p>
+            <button class="btn-primary" onclick="location.href='#products'">Lihat Menu Kami</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section scroll-animation">
+            <div class="container">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="path/to/hero-slide1.jpg" alt="Slide 1" style="width:100%">
+                        <div class="text">Nikmati Kesegaran Es Buah Kami!</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="path/to/hero-slide2.jpg" alt="Slide 2" style="width:100%">
+                        <div class="text">Kehangatan Bakso Kuah Spesial</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="path/to/hero-slide3.jpg" alt="Slide 3" style="width:100%">
+                        <div class="text">Soto Ayam Kampung yang Menggoda</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section scroll-animation">
+            <div class="container">
+                <h2>Tentang Kami</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="path/to/about-us-image.jpg" alt="Warung Nikmat Rasa">
+                    </div>
+                    <div class="about-text">
+                        <h3>Warung Nikmat Rasa: Cita Rasa Tradisional Sejak 20XX</h3>
+                        <p>Didirikan dengan semangat melestarikan kuliner tradisional Indonesia, Warung Nikmat Rasa telah menyajikan hidangan lezat dan otentik sejak tahun 20XX. Kami berkomitmen untuk menggunakan bahan-bahan segar berkualitas tinggi dan resep turun-temurun untuk menghadirkan pengalaman bersantap yang tak terlupakan.</p>
+                        <p>Setiap hidangan kami dibuat dengan cinta dan dedikasi, memastikan setiap gigitan membawa Anda pada perjalanan rasa yang kaya. Dari kesegaran es hingga kehangatan soto dan bakso, kami hadir untuk memanjakan lidah Anda.</p>
+                        <button class="btn-secondary" id="readMoreAboutUs">Baca Selengkapnya</button>
+                        <div id="moreAboutUsContent" style="display: none;">
+                            <p>Visi kami adalah menjadi warung favorit yang tidak hanya dikenal karena kelezatan makanannya, tetapi juga karena suasana yang nyaman dan pelayanan yang ramah. Kami selalu berusaha untuk berinovasi sambil tetap menjaga keaslian cita rasa. Terima kasih telah menjadi bagian dari perjalanan kami!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products-section scroll-animation">
+            <div class="container">
+                <h2>Produk Kami</h2>
+                <p class="section-description">Jelajahi pilihan hidangan lezat kami. Setiap produk dibuat dengan bahan-bahan terbaik dan resep rahasia kami.</p>
+
+                <div class="product-grid">
+                    <div class="product-item" id="ice">
+                        <img src="path/to/ice.jpg" alt="Es Campur" class="product-img">
+                        <h3>Es Campur Spesial</h3>
+                        <p class="product-description">Perpaduan buah-buahan segar, cincau, dan jeli dengan sirup istimewa dan susu kental manis. Sangat cocok untuk mendinginkan hari Anda!</p>
+                        <span class="product-price">Rp 15.000</span>
+                        <button class="btn-product-order" data-product="Es Campur Spesial">Pesan Sekarang</button>
+                    </div>
+
+                    <div class="product-item" id="bakso">
+                        <img src="path/to/bakso.jpg" alt="Bakso Urat" class="product-img">
+                        <h3>Bakso Urat Jumbo</h3>
+                        <p class="product-description">Bakso urat kenyal dengan kuah kaldu sapi yang gurih, taburan bawang goreng, seledri, dan pangsit renyah. Wajib coba!</p>
+                        <span class="product-price">Rp 20.000</span>
+                        <button class="btn-product-order" data-product="Bakso Urat Jumbo">Pesan Sekarang</button>
+                    </div>
+
+                    <div class="product-item" id="soto">
+                        <img src="path/to/soto.jpg" alt="Soto Ayam" class="product-img">
+                        <h3>Soto Ayam Kampung</h3>
+                        <p class="product-description">Soto ayam dengan kuah kuning rempah yang kaya, suwiran ayam kampung, tauge, dan irisan telur. Nikmat disajikan hangat!</p>
+                        <span class="product-price">Rp 18.000</span>
+                        <button class="btn-product-order" data-product="Soto Ayam Kampung">Pesan Sekarang</button>
+                    </div>
+
+                    <div class="product-item" id="kwetiau">
+                        <img src="path/to/kwetiau.jpg" alt="Kwetiau Goreng" class="product-img">
+                        <h3>Kwetiau Goreng Seafood</h3>
+                        <p class="product-description">Kwetiau kenyal digoreng dengan bumbu spesial, udang, cumi, telur, dan sayuran segar. Pilihan sempurna untuk pecinta mie!</p>
+                        <span class="product-price">Rp 22.000</span>
+                        <button class="btn-product-order" data-product="Kwetiau Goreng Seafood">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section scroll-animation">
+            <div class="container">
+                <h2>Galeri Kami</h2>
+                <div class="gallery-grid">
+                    <img src="path/to/gallery1.jpg" alt="Suasana Warung" class="gallery-item">
+                    <img src="path/to/gallery2.jpg" alt="Proses Memasak" class="gallery-item">
+                    <img src="path/to/gallery3.jpg" alt="Pelanggan Senang" class="gallery-item">
+                    <img src="path/to/gallery4.jpg" alt="Hidangan Tersaji" class="gallery-item">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section scroll-animation">
+            <div class="container">
+                <h2>Hubungi Kami & Pesan</h2>
+                <p>Punya pertanyaan atau ingin melakukan pemesanan? Isi formulir di bawah ini atau hubungi kami langsung via WhatsApp.</p>
+                <div class="contact-content">
+                    <form id="orderForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap:</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon (WhatsApp):</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" required>
+                            <div class="error-message" id="phoneError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="productSelect">Pilih Produk:</label>
+                            <select id="productSelect" name="product" required>
+                                <option value="">-- Pilih Produk --</option>
+                                <option value="Es Campur Spesial">Es Campur Spesial</option>
+                                <option value="Bakso Urat Jumbo">Bakso Urat Jumbo</option>
+                                <option value="Soto Ayam Kampung">Soto Ayam Kampung</option>
+                                <option value="Kwetiau Goreng Seafood">Kwetiau Goreng Seafood</option>
+                            </select>
+                            <div class="error-message" id="productError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Jumlah:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                            <div class="error-message" id="quantityError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Catatan Tambahan (opsional):</label>
+                            <textarea id="notes" name="notes" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Kirim Pesanan via WhatsApp</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Informasi Kontak</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Alamat: Jl. Contoh Raya No. 123, Bandar Lampung</p>
+                        <p><i class="fas fa-phone"></i> Telepon: 0812-3456-7890</p>
+                        <p><i class="fas fa-envelope"></i> Email: info@warungnikmatrasa.com</p>
+                        <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="[https://wa.me/6281234567890](https://wa.me/6281234567890)" target="_blank">0812-3456-7890</a></p>
+                        <div class="social-media">
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Warung Nikmat Rasa. Semua Hak Dilindungi.</p>
+            <p>Dibuat dengan <i class="fas fa-heart"></i> di Bandar Lampung</p>
+        </div>
+    </footer>
+
+    <div id="infoPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Selamat Datang di Warung Nikmat Rasa!</h2>
+            <p>Nikmati hidangan autentik kami yang dibuat dengan cinta. Temukan menu favorit Anda sekarang!</p>
+            <button class="btn-primary" onclick="closePopup()">Oke, Saya Mengerti</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
